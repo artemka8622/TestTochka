@@ -1,0 +1,11 @@
+C:\Work\TestTochka\TestTochka\TestTochka\bin\Debug\netcoreapp2.0\TestTochka.deps.json
+C:\Work\TestTochka\TestTochka\TestTochka\bin\Debug\netcoreapp2.0\TestTochka.runtimeconfig.json
+C:\Work\TestTochka\TestTochka\TestTochka\bin\Debug\netcoreapp2.0\TestTochka.runtimeconfig.dev.json
+C:\Work\TestTochka\TestTochka\TestTochka\bin\Debug\netcoreapp2.0\TestTochka.dll
+C:\Work\TestTochka\TestTochka\TestTochka\obj\Debug\netcoreapp2.0\TestTochka.csprojAssemblyReference.cache
+C:\Work\TestTochka\TestTochka\TestTochka\obj\Debug\netcoreapp2.0\TestTochka.csproj.CoreCompileInputs.cache
+C:\Work\TestTochka\TestTochka\TestTochka\obj\Debug\netcoreapp2.0\TestTochka.AssemblyInfoInputs.cache
+C:\Work\TestTochka\TestTochka\TestTochka\obj\Debug\netcoreapp2.0\TestTochka.AssemblyInfo.cs
+C:\Work\TestTochka\TestTochka\TestTochka\bin\Debug\netcoreapp2.0\TestTochka.pdb
+C:\Work\TestTochka\TestTochka\TestTochka\obj\Debug\netcoreapp2.0\TestTochka.dll
+C:\Work\TestTochka\TestTochka\TestTochka\obj\Debug\netcoreapp2.0\TestTochka.pdb
