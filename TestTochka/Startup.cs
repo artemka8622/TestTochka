@@ -17,7 +17,12 @@ namespace TestTochka
 	/// </summary>
 	public class Startup
 	{
-		/// <summary>
+        /// <summary>
+        /// Токен авторизауии.
+        /// </summary>
+	    private string _token = "b13965d60b4a54503d87f709eb0ee806ac021b580ec1c2b5b5856839022c0a7050d94d52b1a1d87259d1e";
+
+	    /// <summary>
 		/// Инициализация приложения.
 		/// </summary>
 		/// <returns>Разрешение зависимостей.</returns>
@@ -52,19 +57,28 @@ namespace TestTochka
 		{
 			var external_service = service_provider.GetService<IExternalApiService>();
 			var statistic_service = service_provider.GetService<IStatisticService>();
-			external_service.Authorize("test", "test");
-			while (true)
+		    //external_service.Authorize(_token);
+		    external_service.Authorize("uvazhaemyjj-balbes@rambler.ru", "e1ypXqqfTx4n");
+            while (true)
 			{
-				Console.WriteLine("Enter input:"); // Prompt
+				Console.WriteLine("Введите идентификатор пользователя или группы:"); // Prompt
 				string user_id = Console.ReadLine(); // Get string from user
 				if (user_id == "exit") // Check string
 				{
 					break;
 				}
 
-				var posts = external_service.GetPosts(user_id, 5);
-				var statistic = statistic_service.GetStatistic(posts);
-				external_service.SendPosts(user_id, statistic);
+			    try
+			    {
+			        var posts = external_service.GetPosts(user_id, 5);
+			        var statistic = statistic_service.GetStatistic(posts);
+			        external_service.SendPosts(user_id, statistic);
+                }
+			    catch (Exception e)
+			    {
+			        Console.WriteLine($"Произошла ошибка: {e.Message}");
+
+                }
 			}
 
 		}
