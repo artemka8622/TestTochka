@@ -58,7 +58,7 @@ namespace TestTochka
 			var external_service = service_provider.GetService<IExternalApiService>();
 			var statistic_service = service_provider.GetService<IStatisticService>();
 		    //external_service.Authorize(_token);
-		    external_service.Authorize("uvazhaemyjj-balbes@rambler.ru", "e1ypXqqfTx4n");
+		    external_service.Authorize("uvazhaemyjj-balbes@rambler.ru", "**********");
             while (true)
 			{
 				Console.WriteLine("Введите идентификатор пользователя или группы:"); // Prompt
